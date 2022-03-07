@@ -1,6 +1,6 @@
 function novoElemento(tagName, className) {
     const elem = document.createElement(tagName)
-    Element.className = className
+    elem.className = className
     return elem
 }
 
@@ -42,5 +42,7 @@ function ParDeBarreiras(altura, abertura, x) {
     this.setX(x)
 }
 
-const b = new ParDeBarreiras(700, 200, 400)
-document.querySelector('[wm-flappy]').appendChild(b.elemento)
+//const b = new ParDeBarreiras(700, 400, 800)
+//document.querySelector('[wm-flappy]').appendChild(b.elemento)
+
+function Barreiras(altura, largura, abertura)
