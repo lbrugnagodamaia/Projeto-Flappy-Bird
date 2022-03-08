@@ -45,4 +45,8 @@ function ParDeBarreiras(altura, abertura, x) {
 //const b = new ParDeBarreiras(700, 400, 800)
 //document.querySelector('[wm-flappy]').appendChild(b.elemento)
 
-function Barreiras(altura, largura, abertura)
+function Barreiras(altura, largura, abertura, espaco, notificarPonto) {
+    this.pares = [
+        new ParDeBarreiras(altura, abertura, largura),
+    ]
+}
